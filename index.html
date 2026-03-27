@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- HTML5 belgesi -->
+<html lang="tr"> <!-- Sayfa dili Türkçe -->
+<head>
+    <meta charset="UTF-8"> <!-- Türkçe karakter desteği -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyumluluk -->
+    <title>Otel</title> <!-- Sekme başlığı -->
+    
+    <!-- Bootstrap CSS - Hazır tasarım bileşenleri -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Özel CSS dosyamız -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Üst menü - Beyaz arka plan, sabit -->
+    <header class="ust-menu">
+        <div class="container-fluid">
+            <div class="menu-icerik">
+                <!-- Logo -->
+                <a class="brand" href="#">
+                    <img src="../resimler/resim3.jpg" alt="Logo" class="menu-logo">
+                </a>
+                
+                <!-- Ana menü - Ortada -->
+                <nav>
+                    <ul class="menu-linkleri">
+                        <li><a href="#">ANASAYFA</a></li>
+                        <li><a href="hakkimda.html">HAKKIMDA</a></li>
+                        <li><a href="odalarimiz.html">ODALARIMIZ</a></li>
+                        <li><a href="galeri.html">GALERİ</a></li>
+                        <li><a href="iletisim.html">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tam ekran slider -->
+    <div id="heroCarousel" class="carousel slide ana-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="../resimler/resim5.jpg" class="d-block w-100" alt="Otel">
+                <div class="carousel-caption">
+                    <h1>Lüks ve Konfor</h1>
+                    <p>Unutulmaz Anılar İçin</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="../resimler/resim2.jpg" class="d-block w-100" alt="Otel">
+                <div class="carousel-caption">
+                    <h1>Eşsiz Deneyim</h1>
+                    <p>Her Detayda Mükemmellik</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="../resimler/resim4.jpg" class="d-block w-100" alt="Otel">
+                <div class="carousel-caption">
+                    <h1>Huzurun Adresi</h1>
+                    <p>Kendinizi Özel Hissedin</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider kontrolleri -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <!-- Footer - Alt bilgi bölümü -->
+    <footer class="alt-bilgi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-3">
+                    <h5>📍 Adres</h5>
+                    <p>Merkez Mahallesi, Sahil Caddesi No:123<br>İstanbul, Türkiye</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>📞 Telefon</h5>
+                    <p>+90 (212) 123 45 67<br>+90 (212) 123 45 68</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>✉️ E-posta</h5>
+                    <p>info@otelimiz.com<br>rezervasyon@otelimiz.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p>&copy; 2024 Otelimiz. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
